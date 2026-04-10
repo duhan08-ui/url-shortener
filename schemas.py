@@ -1,7 +1,7 @@
 from pydantic import BaseModel, HttpUrl
 
 class URLBase(BaseModel):
-    original_url: HttpUrl
+    original_url: str
 
 class URLResponse(BaseModel):
     short_url: str
